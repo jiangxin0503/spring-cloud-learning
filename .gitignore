@@ -1,2 +1,71 @@
 .settings/
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse
+.metadata/
+.settings/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+.project
+.classpath
+.loadpath
+
+## External tool builders
+.externalToolBuilders/
+
+## Locally stored "Eclipse launch configurations"
+*.launch
+
+## Java annotation processor (APT)
+.factorypath
+
+## STS (Spring Tool Suite)
+.springBeans
+
+# IntelliJ
+.idea/
+*.iml
+
+## File-based project format
+*.iws
+
+# Java
+## Compiled class file
+*.class
+
+## Log file
+*.log
+*.log.*
+
+## Package files
+*.jar
+
+# Maven
+target/
+log/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+/RemoteSystemsTempFiles
+/.metadata
+
+
 
