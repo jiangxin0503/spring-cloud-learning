@@ -1,0 +1,4 @@
+server:
+  port: 7902
+user: 
+  userServicePath: http://localhost:7901/simple/
