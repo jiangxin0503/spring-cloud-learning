@@ -24,6 +24,11 @@ public class MovieController {
 		// http://localhost:7900/simple/
 		// VIP virtual IP
 		// HAProxy Heartbeat
+
+		ServiceInstance serviceInstance = this.loadBalancerClient.choose("service-user");
+		System.out.println("===" + ":" + serviceInstance.getServiceId() + ":" + serviceInstance.getHost() + ":"
+				+ serviceInstance.getPort());
+
 		return this.restTemplate.getForObject("http://service-user/simple/" + id, User.class);
 	}
 
@@ -31,14 +36,10 @@ public class MovieController {
 	public String test() {
 
 		ServiceInstance serviceInstance = this.loadBalancerClient.choose("service-user");
-		
-		
+
 		System.out.println("111" + ":" + serviceInstance.getServiceId() + ":" + serviceInstance.getHost() + ":"
 				+ serviceInstance.getPort());
 
-
-
-		return  serviceInstance.getServiceId() + ":" + serviceInstance.getHost() + ":"
-				+ serviceInstance.getPort();
+		return serviceInstance.getServiceId() + ":" + serviceInstance.getHost() + ":" + serviceInstance.getPort();
 	}
 }
