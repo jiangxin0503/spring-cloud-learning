@@ -1,0 +1,18 @@
+server:
+  port: 7902
+spring:
+  application:
+    name: service-movie  
+user: 
+  userServicePath: http://localhost:7901/simple/
+ 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123456@localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+    

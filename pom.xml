@@ -51,5 +51,6 @@
 
     <module>service-normal-consumer-movie</module>
     <module>service-normal-provider-user</module>
-	</modules>
+    <module>service-consumer-movie-ribbon</module>
+  </modules>
 </project>

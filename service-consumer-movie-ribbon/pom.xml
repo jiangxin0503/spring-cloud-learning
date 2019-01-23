@@ -8,15 +8,11 @@
 		<artifactId>spring-cloud-learning</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-
-	<artifactId>service-consumer-movie</artifactId>
-	<name>service-consumer-movie</name>
-
-
+	<groupId>service-consumer-movie</groupId>
+	<artifactId>service-consumer-movie-ribbon</artifactId>
+	<name>service-consumer-movie-ribbon</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -27,6 +23,13 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+
+<!-- 		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+		</dependency>
+ -->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
