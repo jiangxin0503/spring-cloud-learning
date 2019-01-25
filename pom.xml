@@ -60,5 +60,9 @@
 		<module>
 			service-consumer-movie-ribbon-with-hystrix-propagation
 		</module>
+		<module>service-consumer-movie-feign-with-hystrix</module>
+		<module>
+			service-consumer-movie-feign-customizing-without-hystrix
+		</module>
 	</modules>
 </project>
