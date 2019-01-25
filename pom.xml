@@ -44,16 +44,21 @@
 	</build>
 	<!-- <modules> <module>service-discovery-eureka</module> </modules> -->
 	<modules>
+		<module>service-consumer-movie</module>
+		<module>service-consumer-movie-feign</module>
+		<module>service-consumer-movie-feign-customizing</module>
+		<module>service-consumer-movie-ribbon</module>
+		<module>
+			service-consumer-movie-ribbon-properties-customizing
+		</module>
 		<module>service-discovery-eureka</module>
-    <module>service-provider-user</module>
-    <module>service-consumer-movie</module>
-
-
-    <module>service-normal-consumer-movie</module>
-    <module>service-normal-provider-user</module>
-    <module>service-consumer-movie-ribbon</module>
-    <module>
-    	service-consumer-movie-ribbon-properties-customizing
-    </module>
+		<module>service-discovery-eureka-ha</module>
+		<module>service-normal-consumer-movie</module>
+		<module>service-normal-provider-user</module>
+		<module>service-provider-user</module>
+		<module>service-consumer-movie-ribbon-with-hystrix</module>
+		<module>
+			service-consumer-movie-ribbon-with-hystrix-propagation
+		</module>
 	</modules>
 </project>

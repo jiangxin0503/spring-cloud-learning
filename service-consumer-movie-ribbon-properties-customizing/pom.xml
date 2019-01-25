@@ -8,7 +8,7 @@
 		<artifactId>spring-cloud-learning</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>service-consumer-movie</groupId>
+	
 	<artifactId>service-consumer-movie-ribbon-properties-customizing</artifactId>
 	<name>service-consumer-movie-ribbon-properties-customizing</name>
 	<properties>

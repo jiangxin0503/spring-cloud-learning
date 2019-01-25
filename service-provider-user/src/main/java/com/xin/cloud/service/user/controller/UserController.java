@@ -1,6 +1,5 @@
 package com.xin.cloud.service.user.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.google.common.collect.Lists;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import com.xin.cloud.service.user.model.User;
 import com.xin.cloud.service.user.repository.UserRepository;
+
 
 @RestController
 public class UserController {
@@ -57,7 +56,7 @@ public class UserController {
 		return user;
 	}
 
-	@GetMapping("list-all")
+/*	@GetMapping("list-all")
 	public List<User> listAll() {
 		ArrayList<User> list = Lists.newArrayList();
 		User user = new User(1L, "zhangsan");
@@ -68,6 +67,6 @@ public class UserController {
 		list.add(user3);
 		return list;
 
-	}
+	}*/
 
 }

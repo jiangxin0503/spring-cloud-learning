@@ -8,8 +8,9 @@
 		<artifactId>spring-cloud-learning</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>service-consumer-movie-ribbon</artifactId>
-	<name>service-consumer-movie-ribbon</name>
+
+	<artifactId>service-consumer-movie-ribbon-with-hystrix</artifactId>
+	<name>service-consumer-movie-ribbon-with-hystrix</name>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -22,10 +23,16 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		</dependency>
 
+<!-- the ribbon dependency has been includeed in the eureka client -->
 <!-- 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+			<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>   
 		</dependency>
  -->
 
